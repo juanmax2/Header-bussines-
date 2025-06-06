@@ -1,3 +1,125 @@
 @use '_mixins.scss' as mx;
 @use '_variables' as v;
 
+body {
+    margin-left: 150px;
+    margin-top: 50px;
+    height: 700px;
+    background-image: url("../img/hero.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1110px 900px;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+header h1 {
+    color:#424241;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+header nav{
+    align-content: center;
+    justify-items: end;
+    margin: 0;
+    z-index: 1;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 56px;
+    align-items: end;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: v.$secondary-color;
+    font-size: 18px;
+    font-family: Poppins;
+}
+section.tittle {
+    width: 40%;
+}
+section.tittle h2 {
+    font-family: Bebas neue;
+    font-weight: 400;
+    font-size: 100px;
+    color: v.$secondary-color;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+section.tittle h2 span{
+    color: v.$primary-color;
+}
+section.tittle p {
+    color: #909090;
+    width: 75%;
+    font-size: 20px;
+    font-family: Poppins;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+section.tittle button {
+    border: none;
+    background-color: v.$primary-color;
+    border-radius: 2px;
+}
+section.tittle button a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+}
+section.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 30%;
+    justify-items: center;
+    margin-bottom: 150px;
+}
+section.numbers div p:first-child {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: v.$secondary-color;
+    font-family: Bebas Neue;
+    margin-bottom: 0;
+}
+section.numbers div p:nth-child(2) {
+    color: #909090;
+    margin-top: 0;
+    font-family: Poppins;
+    font-size: 12px;
+
+}
+section.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 150px;
+
+}
+section.service article {
+    background-color: white;
+    padding: 10px 20px;
+    font-family: Poppins;
+    width: 20%;
+}
+section.service article h4 {
+    color: v.$secondary-color;
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+section.service article p {
+    color: #909090;
+    font-size: 14px;
+}
